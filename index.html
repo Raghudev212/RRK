@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conta{
+            width: 30px;
+            height: 30px;
+            animation-name: colorchange;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+            margin:5%;
+            animation-direction: alternate-reverse;
+            
+        }
+        .div{
+            
+            background-color: rgba(186, 6, 6, 0.811);
+            animation-delay: 0.3s;
+           
+        }
+        .div1{
+           
+            background-color: rgb(10, 37, 50);
+            animation-delay: 0.4s;
+        }
+        .div2{
+    
+            background-color: rgb(29, 209, 41);
+            animation-delay: 0.5s;
+        }
+        .div3{
+
+            background-color: rgb(180, 31, 130);
+            animation-delay: 0.6s;
+            
+        }
+        div{
+            display: flex;
+        }
+        body{
+            margin-top: 50dvh;
+            margin-left: 30vw;
+        }
+        @keyframes colorchange{
+            from{
+                transform: translateY(0px);
+                background-color: rgb(239, 24, 206);
+                
+            }
+            to{
+                transform: translateY(50px);
+                background-color: rgb(119, 48, 225);
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <div class="conta div"></div>
+        <div class="conta div1"></div>
+        <div class="conta div2"></div>
+        <div class="conta div3"></div> 
+        
+    </div>
+</body>
+</html>
